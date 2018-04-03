@@ -69,7 +69,10 @@ public class RenderMathJS extends ARenderAs {
 	@Override
 	public String visitDimensionalLiteral(
 			LEMSExpressionParser.DimensionalLiteralContext ctx) {
+	    // grab the unit from ctx
 		Unit<?> unit = unitContext.get(ctx.ID().getText());
+		
+		// create a unit converter converting from "unit" to the SI unit of "unit"
 		UnitConverter converterToAny = null;
 		try {
 			converterToAny = unit.getConverterToAny(unit.getSystemUnit());
@@ -77,6 +80,8 @@ public class RenderMathJS extends ARenderAs {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		// convert the value in ctx to the SI unit, return it as a string
 		Number val = converterToAny.convert(Double.valueOf(ctx.FLOAT()
 				.getText()));
 		return val.toString();
