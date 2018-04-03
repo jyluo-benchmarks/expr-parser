@@ -1,7 +1,5 @@
 package org.lemsml.exprparser.visitors;
 
-import javax.measure.Quantity;
-
 public class BooleanOrQuantity {
 	public static BooleanOrQuantity VOID = new BooleanOrQuantity(new Object());
 

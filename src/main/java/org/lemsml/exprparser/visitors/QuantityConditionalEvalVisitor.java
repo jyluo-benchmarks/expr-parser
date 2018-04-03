@@ -1,23 +1,14 @@
 package org.lemsml.exprparser.visitors;
 
-import static tec.units.ri.AbstractUnit.ONE;
-
 import java.text.MessageFormat;
 import java.util.HashMap;
 import java.util.Map;
-
-import javax.measure.IncommensurableException;
-import javax.measure.Quantity;
-import javax.measure.UnconvertibleException;
-import javax.measure.Unit;
-import javax.measure.UnitConverter;
 
 import org.antlr.v4.runtime.misc.ParseCancellationException;
 
 import org.lemsml.exprparser.utils.UndefinedSymbolException;
 import parser.LEMSExpressionBaseVisitor;
 import parser.LEMSExpressionParser;
-import tec.units.ri.quantity.Quantities;
 
 public class QuantityConditionalEvalVisitor extends LEMSExpressionBaseVisitor<BooleanOrQuantity> {
 

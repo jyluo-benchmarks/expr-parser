@@ -1,11 +1,7 @@
 package org.lemsml.exprparser.visitors;
 
-import static tec.units.ri.AbstractUnit.ONE;
-
 import java.util.HashMap;
 import java.util.Map;
-
-import javax.measure.Unit;
 
 import org.antlr.v4.runtime.misc.ParseCancellationException;
 

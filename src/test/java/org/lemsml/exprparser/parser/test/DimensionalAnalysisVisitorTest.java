@@ -2,16 +2,9 @@ package org.lemsml.exprparser.parser.test;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static tec.units.ri.AbstractUnit.ONE;
-import static tec.units.ri.unit.Units.AMPERE;
-import static tec.units.ri.unit.Units.METRE;
-import static tec.units.ri.unit.MetricPrefix.CENTI;
-import static tec.units.ri.unit.MetricPrefix.MILLI;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import javax.measure.Unit;
 
 import org.junit.Test;
 

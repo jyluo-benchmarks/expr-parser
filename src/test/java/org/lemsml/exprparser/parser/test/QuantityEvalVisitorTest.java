@@ -1,19 +1,10 @@
 package org.lemsml.exprparser.parser.test;
 
 import static org.junit.Assert.assertEquals;
-import static tec.units.ri.AbstractUnit.ONE;
-import static tec.units.ri.unit.MetricPrefix.CENTI;
-import static tec.units.ri.unit.Units.METRE;
-import static tec.units.ri.unit.Units.SECOND;
 
 import java.text.MessageFormat;
 import java.util.HashMap;
 import java.util.Map;
-
-import javax.measure.Quantity;
-import javax.measure.Unit;
-import javax.measure.quantity.Length;
-import javax.measure.quantity.Time;
 
 import org.antlr.v4.runtime.misc.ParseCancellationException;
 import org.junit.Before;
@@ -21,7 +12,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import tec.units.ri.quantity.Quantities;
 import org.lemsml.exprparser.utils.ExpressionParser;
 import org.lemsml.exprparser.utils.UndefinedSymbolException;
 

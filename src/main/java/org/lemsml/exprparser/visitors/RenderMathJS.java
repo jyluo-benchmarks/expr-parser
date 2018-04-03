@@ -2,11 +2,6 @@ package org.lemsml.exprparser.visitors;
 
 import java.util.Map;
 
-import javax.measure.IncommensurableException;
-import javax.measure.UnconvertibleException;
-import javax.measure.Unit;
-import javax.measure.UnitConverter;
-
 import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.misc.ParseCancellationException;
 

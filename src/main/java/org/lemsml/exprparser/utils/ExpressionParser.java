@@ -3,9 +3,6 @@ package org.lemsml.exprparser.utils;
 import java.util.Map;
 import java.util.Set;
 
-import javax.measure.Quantity;
-import javax.measure.Unit;
-
 import org.antlr.v4.runtime.misc.ParseCancellationException;
 
 import org.lemsml.exprparser.visitors.AntlrExpressionParser;
